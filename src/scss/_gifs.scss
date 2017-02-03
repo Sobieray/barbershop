@@ -54,7 +54,7 @@ h1, h2 {
 			width: 15vw;
 			display: block;
 			margin: 0 auto;
-			min-width: 185px;
+			min-width: 100px;
 		}
   	span {
   		background-color: #E0162B;
@@ -82,9 +82,17 @@ h1, h2 {
 }
 // Media Queries
 
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
 	.tv-bg, .controls {
 		max-width: 100vw;
+	}
+	.controls {
+		a.btn {
+			font-size: 1rem;
+			span {
+				padding: 2rem 1rem;
+			}
+		}
 	}
 }
 

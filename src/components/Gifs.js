@@ -8,7 +8,7 @@ import Styles from '../scss/_gifs.scss';
 export default class Gifs extends React.Component {
 	render() {
 		return (
-			<div id="gif">
+			<div>
 				<h1>Which Presidency Will Have The Best Gifs</h1>
 				<h2>{this.props.title}</h2>
 				<div class="controls">
@@ -16,7 +16,7 @@ export default class Gifs extends React.Component {
 					<p>VS</p>
 					<a className="btn" onClick={this.props.lessTrump}><img className="president" src={Obama} alt={'obama'}/><span>Obama Administration</span></a>
 				</div>
-				<div className="screen tv-bg">
+				<div className="tv-bg">
 					<img crossOrigin={"anonymous"} className="content" src={this.props.gifs} />
 				</div>
 			</div>
