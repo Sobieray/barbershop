@@ -1,12 +1,14 @@
 import React from "react";
+//Components
 import Gifs from './Gifs';
+
 export default class Layout extends React.Component {
 	constructor() {
 		super();
 		this.state = {
 			gif: [],
 			default: 'https://media.giphy.com/media/3oEdv78D4Vj4sFidwc/giphy.gif',
-			title: 'Giphy'
+			title: 'Barbershop Code Challenge'
 		}	
 	}
 
