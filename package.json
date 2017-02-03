@@ -2,11 +2,14 @@
   "name": "barbershop",
   "version": "1.0.0",
   "description": "code challenge",
-  "main": "webpack.config.js",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
-    "start": "webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -p",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +32,8 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "css-loader": "^0.26.1",
+    "ejs": "2.4.1",
+    "express": "4.13.3",
     "image-webpack-loader": "^3.2.0",
     "node-sass": "^4.5.0",
     "react": "^0.14.6",

@@ -11,7 +11,7 @@ export default class Layout extends React.Component {
 	}
 
 	moreTrump() {
-		const giphy = 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=donald+trump';
+		const giphy = 'https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=donald+trump';
 		const img = document.querySelector('img');
 		fetch(giphy)
 		  .then(data => data.json())
@@ -22,7 +22,7 @@ export default class Layout extends React.Component {
 	}
 
 	lessTrump() {
-		const giphy = 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=obama+biden';
+		const giphy = 'https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=obama+biden';
 		const img = document.querySelector('img');
 		fetch(giphy)
 		  .then(data => data.json())
