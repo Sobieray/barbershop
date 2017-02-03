@@ -31,6 +31,7 @@ export default class Layout extends React.Component {
 		})
 		  .then(data => data.json())
 		  .then(info => {
+		  	console.log(info);
 		  	const gif = info.data.fixed_height_downsampled_url;
 		  	this.setState({gif, title: "ObamaTron"});
 		  });  
