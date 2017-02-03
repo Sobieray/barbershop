@@ -17,7 +17,7 @@ export default class Gifs extends React.Component {
 				<a className="btn" onClick={this.props.moreTrump}><img className="president" src={Trump} alt={'trump'}/><span>Trump Administration</span></a>
 				<a className="btn" onClick={this.props.lessTrump}><img className="president" src={Obama} alt={'obama'}/><span>Obama Administration</span></a>
 				<div className="screen tv-bg">
-					<img crossOrigin={"anonymous"} className="content" src={this.props.gifs} />
+					<img crossOrigin={"use-credentials"} className="content" src={this.props.gifs} />
 				</div>
 
 			</div>
